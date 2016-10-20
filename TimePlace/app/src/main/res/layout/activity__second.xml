@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity__second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ashishrpa.timeplace.Activity_Second">
+   <LinearLayout
+       android:id="@+id/ll_activity2_first"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#716e6e">
+      <ImageView
+          android:id="@+id/imageView1"
+          android:layout_width="35dp"
+          android:layout_height="55dp"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:background="@null"
+          android:src="@drawable/back" />
+
+      <EditText
+          android:id="@+id/et_datedetails"
+          android:textColor="#ffffff"
+          android:layout_weight="1"
+          android:layout_width="wrap_content"
+          android:layout_height="55dp"
+          android:background="#9e9494"/>
+
+      <ImageButton
+          android:id="@+id/imageButton"
+          android:layout_width="35dp"
+          android:layout_height="55dp"
+          android:layout_alignParentRight="true"
+          android:background="@null"
+          android:src="@drawable/location" />
+   </LinearLayout>
+
+   <RelativeLayout
+       android:id="@+id/ll_activity2_second"
+       android:layout_below="@+id/ll_activity2_first"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:background="#716e6e">
+      <TextView
+          android:id="@+id/tv_activity2_category"
+          android:text="@string/category"
+          android:textSize="15sp"
+          android:textStyle="bold"
+          android:layout_alignParentLeft="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <Spinner
+          android:id="@+id/spinner"
+          android:layout_alignParentRight="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+
+      </Spinner>
+
+       </RelativeLayout>
+   <LinearLayout
+       android:layout_below="@+id/ll_activity2_second"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:background="#8e8989">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+         <TextView
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:drawableLeft="@drawable/filter"
+             android:id="@+id/tv_filter_results"
+             android:text="Filter Results"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+      </RelativeLayout>
+
+   </LinearLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="fill_parent">
+      <TextView
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:id="@+id/tv_comments"
+          android:text="@string/my_comments"
+          android:textSize="16sp"
+          android:textColor="#6b0a0a"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+   </RelativeLayout>
+
+
+</RelativeLayout>

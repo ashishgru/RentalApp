@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ashishrpa.timeplace.MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_first"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <DatePicker
+            android:layout_weight="1"
+            android:id="@+id/dp_datepicker1"
+            android:datePickerMode="spinner"
+            android:layout_width="0dp"
+            android:layout_height="200dp"/>
+        <TimePicker
+            android:layout_weight="1"
+            android:id="@+id/tp_timePicker1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_second"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="200dp">
+
+        <DatePicker
+            android:layout_weight="1"
+            android:id="@+id/dp_datepicker2"
+            android:datePickerMode="spinner"
+            android:layout_width="0dp"
+            android:layout_height="200dp"/>
+
+        <TimePicker
+            android:layout_weight="1"
+            android:id="@+id/tp_timePicker2"
+            android:layout_width="0dp"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll_third"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/ed_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search"/>
+
+    </LinearLayout>
+
+</LinearLayout>

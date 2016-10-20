@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TimePlace</string>
+    <string name="search">SEARCH</string>
+    <string name="category">Category</string>
+    <string name="my_comments">Bug in Location fetching.\nMonth MMM format not done. \nTotal Time Spent 6+ Hrs </string>
+
+    <string-array name="cars_array">
+        <item>All Cars</item>
+        <item>Audi</item>
+        <item>Alto</item>
+    </string-array>
+</resources>
